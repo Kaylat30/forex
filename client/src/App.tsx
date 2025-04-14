@@ -18,7 +18,7 @@ const router = createBrowserRouter(
       <Route path="loginn" element={<ProtectedRoute element={<Chat />} />} />
       <Route path="chat" element={<Chat />} />
       <Route path="signup" element={<Signup />} />
-      <Route path="login" element={<Login />} />
+      <Route path="login" element={<Login />} /> 
     </Route>
   )
 );
