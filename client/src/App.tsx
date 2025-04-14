@@ -15,7 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} errorElement={<Error />}>
       <Route index element={<Home />} />
-      {/* <Route path="chat" element={<ProtectedRoute element={<Chat />} />} /> */}
+      <Route path="loginn" element={<ProtectedRoute element={<Chat />} />} />
       <Route path="chat" element={<Chat />} />
       <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
