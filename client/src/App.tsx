@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="loginn" element={<ProtectedRoute element={<Chat />} />} />
       <Route path="chat" element={<Chat />} />
-      <Route path="signup" element={<Signup />} />
+      <Route path="signup" element={<Signup />} /> 
       <Route path="login" element={<Login />} /> 
     </Route>
   )
