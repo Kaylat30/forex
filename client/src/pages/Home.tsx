@@ -116,14 +116,16 @@ export default function Home() {
       <section id="hero">
         {getStarted()}
       </section>
+
+      <section id="info">
+        <Info />
+      </section>
       
       <section id="features">
         <Features />
       </section>
 
-      <section id="info">
-        <Info />
-      </section>
+      
 
       <section id="pricing">
         <Pricing />

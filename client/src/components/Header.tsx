@@ -106,6 +106,16 @@ export default function Header() {
               Features
             </ScrollLink>
 
+            {/* <ScrollLink 
+              to="info"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className="cursor-pointer hover:text-brightGreen"
+            >
+            Info
+            </ScrollLink> */}
+
             <ScrollLink 
               to="pricing"
               smooth={true}
@@ -113,31 +123,30 @@ export default function Header() {
               offset={-50}
               className="cursor-pointer hover:text-brightGreen"
             >
-              Pricing
+            Pricing
             </ScrollLink>
 
-           {/* <NavLink 
-            to="add"           
-            className="hover:text-brightGreen"
-            style={({isActive}) => isActive ? activeStyles : undefined}>
-              Add
-            </NavLink>
+          {/* This link is hidden on screens smaller than LG            */}
 
-            {/* This link is hidden on screens smaller than LG           
+            <ScrollLink 
+              to="testimonial"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className="cursor-pointer hover:text-brightGreen"
+            >
+            Testimonial
+            </ScrollLink>
 
-            <NavLink 
-            to="education" 
-            className="hover:text-brightGreen"
-            style={({isActive}) => isActive ? activeStyles : undefined}>
-              Education
-            </NavLink>
-
-            <NavLink 
-            to="blog" 
-            className="hover:text-brightGreen"
-            style={({isActive}) => isActive ? activeStyles : undefined}>
-              Blogs
-            </NavLink> */}
+            <ScrollLink 
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className="cursor-pointer hover:text-brightGreen"
+            >
+            Contact Us
+            </ScrollLink>
 
             </div>
 
@@ -205,16 +214,22 @@ export default function Header() {
             menuOpen ? 'flex flex-col' : 'hidden'
           } items-center self-end py-8 mt-10 space-y-6 font-bold bg-white xsm:w-64 xsm:self-center left-6 right-6 drop-shadow-md`}
         >
-          
           <Link to="/">Home</Link>
           <Link to="chat">Chat</Link>
-          {/* <Link to="eye">Eye</Link>
-          <Link to="nutrition">Nutrition</Link> 
-          <Link to="add">Add</Link>
-          <Link to="education">Education</Link>
-          <Link to="blog">Blogs</Link>         */}
-                  
+          <ScrollLink to="features" smooth={true} duration={500} offset={-50} onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-brightGreen">
+            Features
+          </ScrollLink>
+          <ScrollLink to="pricing" smooth={true} duration={500} offset={-50} onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-brightGreen">
+            Pricing
+          </ScrollLink>
+          <ScrollLink to="testimonial" smooth={true} duration={500} offset={-50} onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-brightGreen">
+            Testimonial
+          </ScrollLink>
+          <ScrollLink to="contact" smooth={true} duration={500} offset={-50} onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-brightGreen">
+            Contact
+          </ScrollLink>
         </div>
+
     </nav>
 
     
